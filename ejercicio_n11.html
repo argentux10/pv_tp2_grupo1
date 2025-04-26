@@ -1,0 +1,45 @@
+<!--11. Solicitar al usuario que ingrese el número de kilómetros recorridos por su vehículo
+y el número de litros de combustible consumidos. Calcular y mostrar el consumo de
+combustible por kilómetro.
+El resultado se obtiene dividiendo número de litros dividido por número de kilómetros.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 11</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+
+    <script type="module" src="/js/ejercicio_n11.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Consumo de combustible</h1>
+        <div class="form-group">
+            <label for="txtCapital">Kilometros</label>
+            <input type="number" id="txtCapital" placeholder="Ingrese la cantidad de kilometros recorridos">
+        </div>
+        <div class="form-group">
+            <label for="txtTasaInteres">Litros</label>
+            <input type="number" id="txtTasaInteres" placeholder="Ingrese la cantidad de litros consumidos">
+        </div>
+
+        <button id="btnCalcular" class="calculate-btn">Calcular</button>
+        <p id="resultado" class="resultado">Monto total a pagar</p>
+    </div>
+
+<script type="module" src="/js/ejercicio_n11.html"></script>
+
+</body>
+
+</html>
