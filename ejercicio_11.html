@@ -1,0 +1,39 @@
+<!--Ejercicios para usar prompt
+Para desarrollar los siguientes ejercicios debe crear por cada ejercicio un archivo html,
+dentro de la etiqueta <head></head> agregar las etiquetas <script></script> y dentro de ellas agregar el
+código javascript para resolver cada ejercicio.
+El nombre para cada archivo html debe ser: ejercicio9.html, etc.
+
+11. Solicitar al usuario que ingrese el número de kilómetros recorridos por su vehículo
+y el número de litros de combustible consumidos. Calcular y mostrar el consumo de
+combustible por kilómetro.
+El resultado se obtiene dividiendo número de litros dividido por número de kilómetros.-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Ejercicio 11 </title>
+
+    <script>
+        const calcularKilometros =() =>{
+
+            let kilometros = parseFloat(prompt(" Ingrese el numero de kilometros recorridos "));
+            let litros = parseFloat(prompt(" Ingrese la cantidad de litros consumidos  "));
+            if(kilometros>0  && litros>0){
+                const consumo = litros / kilometros;
+                alert(` CONSUMO DE COMBUSTIBLE POR KILOMETRO  : ${consumo.toFixed(2)} lts`);
+            }else{
+                alert(`ERROR: Los numeros ingresados no son validos`);
+            }
+        };
+        calcularKilometros();
+    </script>
+
+</head>
+
+<body>
+    <h1> Ejercicio 11 </h1>
+</body>
+</html>
