@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+  <title> Ejercicio 13 </title>
+
+    <script>
+
+        const cantidad = parseInt(prompt("¿Cuantos numeros va a ingresar?"));
+        const numeros = [];
+
+        for (let i = 0; i < cantidad; i++) {
+            let num = parseFloat(prompt(`Ingrese el numero ${i + 1}:`));
+            numeros.push(num);
+        }
+
+        const mostrarArreglo = (arreglo) => {
+
+        for (let i = 0; i < arreglo.length; i++) {
+          alert( ` Los numeros del arreglo son: ${ arreglo[i] }` );
+        }
+
+      };
+
+
+      mostrarArreglo(numeros);
+
+    </script>
+
+</head>
+
+<body>
+
+<h1> Ejercicio 13 </h1>
+
+</body>
+
+</html>
