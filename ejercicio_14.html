@@ -1,0 +1,39 @@
+<!--14.	Escribir una función llamada duplicar que reciba un arreglo de
+números y retorne un nuevo arreglo donde cada número esté multiplicado por dos (2).-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title> Ejercicio 14 </title>
+
+    <script>
+
+        let cantidad= parseInt(prompt('Digite la cantidad de numeros desea ingresar: '));
+        let arreglo = [ ];
+
+        for (let i =0; i < cantidad;i++){
+            let numero = parseInt(prompt(('Digite el numero que quiere ingresar ' )));
+            arreglo.push(numero);
+        }
+
+        let duplicar = ( arreglo ) => {
+            let duplicado = [];
+            for (let i = 0; i < arreglo.length; i++) {
+                duplicado.push(arreglo[i]*2);
+            }
+            return duplicado;
+        };
+
+        alert ( `El arreglo ingresado: [${arreglo} ] \nEl arreglo multiplicado por 2: [${ duplicar(arreglo)}]`);
+
+    </script>
+
+</head>
+
+<body>
+    <h1> Ejercicio 14</h1>
+</body>
+
+</html>
