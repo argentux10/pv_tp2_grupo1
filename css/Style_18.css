@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+p{
+    display: grid;
+    place-items: center;
+    height: 200px;
+}
+
+body {
+    background-color: lightblue;
+    padding: 80px;
+    text-align: center;
+}
